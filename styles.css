@@ -13,7 +13,6 @@ line-height: 1.5;
 -webkit-font-smoothing: antialiased;
 height: 100vh;
 display: flex;
-/* flex-direction: column; */
 font-family: Impact, "Haettenschweiler", 'Arial Narrow Bold', sans-serif;
 font-size: 16px;
 }
@@ -28,7 +27,10 @@ p, h1, h2, h3, h4, h5, h6 {
 overflow-wrap: break-word;
 }
 
-
+:root
+{
+    --heading:4rem;
+}
 #background-image
 {
     max-height: 100vh;
@@ -58,23 +60,68 @@ overflow-wrap: break-word;
     max-width: 35vw;
     overflow: hidden;
 }
-header{
-    background-color: wheat;
-}
-main{
-    background: white;
-}
+
 .right-side
 {
-    background-color: peachpuff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(172, 118, 118);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin-left: 35vw;
+    flex: 1;
+}
+header
+{
+    margin-left: 5rem;
+    font-size: var(--heading);
+    align-self: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
 }
 
+main{
+    background: rgb(147, 184, 206)   ;
+}
 .form-row
 {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1.5rem;
+    margin-left: 5rem;
+    gap:10rem;
+}
+.label-container
+{
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="password"],input[type="tel"]
+{
+    width: 150%;
+    border: #dbe2f2;
+}
+input:valid
+{
+    background-color: rgb(219, 243, 219);
+    
+}
+input:focus
+{
+    border: solid lightskyblue;
+}
+button
+{
+    margin-left: 5rem;
+    margin-top: 5rem;
+    background-color: rgb(172, 118, 118);
+    border-radius: 0.5rem;
+    padding: 0.75rem 3rem;
+    color: white;
+}
+p
+{
+    margin-top: 0.5rem;
+    margin-left: 5rem;    
 }
