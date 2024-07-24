@@ -13,7 +13,7 @@ line-height: 1.5;
 -webkit-font-smoothing: antialiased;
 height: 100vh;
 display: flex;
-flex-direction: column;
+/* flex-direction: column; */
 font-family: Impact, "Haettenschweiler", 'Arial Narrow Bold', sans-serif;
 font-size: 16px;
 }
@@ -34,12 +34,12 @@ overflow-wrap: break-word;
     max-height: 100vh;
     width: 35%;
     flex: 1;
-    position: absolute;
+    position: fixed;
 }
 #logo
 {
     width: 15%;
-    position:absolute;
+    position:fixed;
     bottom: 46%;
     left: 10%;
 }
@@ -54,7 +54,27 @@ overflow-wrap: break-word;
     bottom: 50%;
     font-size: 2.5rem;
     text-align: center;
-    position: absolute;
+    position: fixed;
     max-width: 35vw;
     overflow: hidden;
+}
+header{
+    background-color: wheat;
+}
+main{
+    background: white;
+}
+.right-side
+{
+    background-color: peachpuff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 35vw;
+}
+
+.form-row
+{
+    display: flex;
+    justify-content: space-around;
 }
